@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name conn_shield)(type KiCad)(uri "$(KIPRJMOD)/conn_shield.pretty")(options "")(descr ""))
+)

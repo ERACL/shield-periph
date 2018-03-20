@@ -1,0 +1,418 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:conn_shield_1
+LIBS:conn_shield_2
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Shield pour périphériques"
+Date ""
+Rev "vx.x"
+Comp "Centrale Lyon"
+Comment1 ""
+Comment2 "Contacter G. CHARREAUX (chxguillaume@gmail.com)"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 600  3600 0    60   ~ 0
+Trous fixation
+$Comp
+L Conn_01x01 J6
+U 1 1 5A818DEF
+P 1200 3050
+F 0 "J6" H 1200 3150 50  0000 C CNN
+F 1 "Fix" H 1200 2950 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 1200 3050 50  0001 C CNN
+F 3 "" H 1200 3050 50  0001 C CNN
+	1    1200 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1000 3050
+$Comp
+L Conn_01x01 J7
+U 1 1 5A8190B0
+P 1200 3350
+F 0 "J7" H 1200 3450 50  0000 C CNN
+F 1 "Fix" H 1200 3250 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 1200 3350 50  0001 C CNN
+F 3 "" H 1200 3350 50  0001 C CNN
+	1    1200 3350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1000 3350
+$Comp
+L Conn_01x01 J4
+U 1 1 5A81928F
+P 850 3050
+F 0 "J4" H 850 3150 50  0000 C CNN
+F 1 "Fix" H 850 2950 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 850 3050 50  0001 C CNN
+F 3 "" H 850 3050 50  0001 C CNN
+	1    850  3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 650  3050
+$Comp
+L Conn_01x01 J5
+U 1 1 5A819296
+P 850 3350
+F 0 "J5" H 850 3450 50  0000 C CNN
+F 1 "Fix" H 850 3250 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 850 3350 50  0001 C CNN
+F 3 "" H 850 3350 50  0001 C CNN
+	1    850  3350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 650  3350
+Text Label 8600 2100 2    60   ~ 0
+I2C_CLK2
+Text Label 8600 2200 2    60   ~ 0
+I2C_DATA2
+Text Label 6650 1900 0    60   ~ 0
+RB4
+Text Label 6650 2000 0    60   ~ 0
+RB5
+Text Label 6650 2100 0    60   ~ 0
+RB6
+Text Label 6650 2200 0    60   ~ 0
+RB7
+Text Label 6650 1700 0    60   ~ 0
+RA0
+Text Label 6650 1800 0    60   ~ 0
+RA1
+Text Label 8600 1700 2    60   ~ 0
+RB12
+Text Label 8600 1800 2    60   ~ 0
+RB13
+Text Label 8600 1900 2    60   ~ 0
+RB14
+Text Label 8600 2000 2    60   ~ 0
+RB15
+$Comp
+L +5V #PWR01
+U 1 1 5AA0E0CC
+P 6600 1600
+F 0 "#PWR01" H 6600 1450 50  0001 C CNN
+F 1 "+5V" V 6600 1800 50  0000 C CNN
+F 2 "" H 6600 1600 50  0001 C CNN
+F 3 "" H 6600 1600 50  0001 C CNN
+	1    6600 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5AA0E13D
+P 6600 1400
+F 0 "#PWR02" H 6600 1150 50  0001 C CNN
+F 1 "GND" V 6600 1200 50  0000 C CNN
+F 2 "" H 6600 1400 50  0001 C CNN
+F 3 "" H 6600 1400 50  0001 C CNN
+	1    6600 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_shield_1 U2
+U 1 1 5AA11AF5
+P 7900 1300
+F 0 "U2" H 7900 1300 60  0000 C CNN
+F 1 "Shield_droite" H 7750 1400 60  0000 C CNN
+F 2 "conn_shield:conn_shield" H 7900 1300 60  0001 C CNN
+F 3 "" H 7900 1300 60  0001 C CNN
+	1    7900 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_shield_2 U3
+U 1 1 5AA11C86
+P 7350 1300
+F 0 "U3" H 7350 1300 60  0000 C CNN
+F 1 "Shield_gauche" H 7250 1400 60  0000 C CNN
+F 2 "conn_shield:conn_shield" H 7350 1300 60  0001 C CNN
+F 3 "" H 7350 1300 60  0001 C CNN
+	1    7350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 5AA12765
+P 6600 1500
+F 0 "#PWR03" H 6600 1350 50  0001 C CNN
+F 1 "+3.3V" V 6600 1750 50  0000 C CNN
+F 2 "" H 6600 1500 50  0001 C CNN
+F 3 "" H 6600 1500 50  0001 C CNN
+	1    6600 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 5AA12D34
+P 8650 1600
+F 0 "#PWR04" H 8650 1450 50  0001 C CNN
+F 1 "+5V" V 8650 1800 50  0000 C CNN
+F 2 "" H 8650 1600 50  0001 C CNN
+F 3 "" H 8650 1600 50  0001 C CNN
+	1    8650 1600
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5AA12D3A
+P 8650 1400
+F 0 "#PWR05" H 8650 1150 50  0001 C CNN
+F 1 "GND" V 8650 1200 50  0000 C CNN
+F 2 "" H 8650 1400 50  0001 C CNN
+F 3 "" H 8650 1400 50  0001 C CNN
+	1    8650 1400
+	0    -1   1    0   
+$EndComp
+$Comp
+L +3.3V #PWR06
+U 1 1 5AA12D40
+P 8650 1500
+F 0 "#PWR06" H 8650 1350 50  0001 C CNN
+F 1 "+3.3V" V 8650 1750 50  0000 C CNN
+F 2 "" H 8650 1500 50  0001 C CNN
+F 3 "" H 8650 1500 50  0001 C CNN
+	1    8650 1500
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5AA137F8
+P 8650 2300
+F 0 "#PWR07" H 8650 2050 50  0001 C CNN
+F 1 "GND" V 8650 2100 50  0000 C CNN
+F 2 "" H 8650 2300 50  0001 C CNN
+F 3 "" H 8650 2300 50  0001 C CNN
+	1    8650 2300
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5AA13866
+P 8650 3100
+F 0 "#PWR08" H 8650 2850 50  0001 C CNN
+F 1 "GND" V 8650 2900 50  0000 C CNN
+F 2 "" H 8650 3100 50  0001 C CNN
+F 3 "" H 8650 3100 50  0001 C CNN
+	1    8650 3100
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5AA138D4
+P 6550 3100
+F 0 "#PWR09" H 6550 2850 50  0001 C CNN
+F 1 "GND" V 6550 2900 50  0000 C CNN
+F 2 "" H 6550 3100 50  0001 C CNN
+F 3 "" H 6550 3100 50  0001 C CNN
+	1    6550 3100
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5AA13942
+P 6550 2300
+F 0 "#PWR010" H 6550 2050 50  0001 C CNN
+F 1 "GND" V 6550 2100 50  0000 C CNN
+F 2 "" H 6550 2300 50  0001 C CNN
+F 3 "" H 6550 2300 50  0001 C CNN
+	1    6550 2300
+	0    1    -1   0   
+$EndComp
+Text Label 6650 2700 0    60   ~ 0
+RA10
+Text Label 6650 2800 0    60   ~ 0
+RC0
+Text Label 6650 2900 0    60   ~ 0
+RC1
+Text Label 6650 3000 0    60   ~ 0
+RC2
+Text Label 6650 2500 0    60   ~ 0
+RA8
+Text Label 6650 2600 0    60   ~ 0
+RA9
+Text Label 6650 2400 0    60   ~ 0
+RA7
+Text Label 8600 2700 2    60   ~ 0
+RC6
+Text Label 8600 2800 2    60   ~ 0
+RC7
+Text Label 8600 2900 2    60   ~ 0
+RC8
+Text Label 8600 3000 2    60   ~ 0
+RC9
+Text Label 8600 2500 2    60   ~ 0
+RC4
+Text Label 8600 2600 2    60   ~ 0
+RC5
+Text Label 8600 2400 2    60   ~ 0
+RC3
+Text Notes 6200 3300 0    60   ~ 0
+Connecteurs du shield
+Wire Notes Line
+	1300 3500 1300 2900
+Wire Notes Line
+	1300 2900 600  2900
+Wire Notes Line
+	600  2900 600  3500
+Wire Notes Line
+	600  3500 1300 3500
+Wire Wire Line
+	7200 1900 6650 1900
+Wire Wire Line
+	7200 2000 6650 2000
+Wire Wire Line
+	7200 2100 6650 2100
+Wire Wire Line
+	7200 2200 6650 2200
+Wire Wire Line
+	7200 1700 6650 1700
+Wire Wire Line
+	7200 1800 6650 1800
+Wire Wire Line
+	8050 1700 8600 1700
+Wire Wire Line
+	8050 1800 8600 1800
+Wire Wire Line
+	8050 1900 8600 1900
+Wire Wire Line
+	8050 2000 8600 2000
+Wire Wire Line
+	8600 2200 8050 2200
+Wire Wire Line
+	8600 2100 8050 2100
+Wire Wire Line
+	8650 1600 8050 1600
+Wire Wire Line
+	8650 1500 8050 1500
+Wire Wire Line
+	8650 1400 8050 1400
+Wire Wire Line
+	6600 1400 7200 1400
+Wire Wire Line
+	7200 1500 6600 1500
+Wire Wire Line
+	6600 1600 7200 1600
+Wire Wire Line
+	6550 2300 7200 2300
+Wire Wire Line
+	6550 3100 7200 3100
+Wire Wire Line
+	8650 3100 8050 3100
+Wire Wire Line
+	8650 2300 8050 2300
+Wire Wire Line
+	7200 2700 6650 2700
+Wire Wire Line
+	7200 2800 6650 2800
+Wire Wire Line
+	7200 2900 6650 2900
+Wire Wire Line
+	7200 3000 6650 3000
+Wire Wire Line
+	7200 2500 6650 2500
+Wire Wire Line
+	7200 2600 6650 2600
+Wire Wire Line
+	7200 2400 6650 2400
+Wire Wire Line
+	8050 2700 8600 2700
+Wire Wire Line
+	8050 2800 8600 2800
+Wire Wire Line
+	8050 2900 8600 2900
+Wire Wire Line
+	8050 3000 8600 3000
+Wire Wire Line
+	8050 2500 8600 2500
+Wire Wire Line
+	8050 2600 8600 2600
+Wire Wire Line
+	8050 2400 8600 2400
+Wire Notes Line
+	6200 3200 9050 3200
+Wire Notes Line
+	9050 3200 9050 1100
+Wire Notes Line
+	9050 1100 6200 1100
+Wire Notes Line
+	6200 1100 6200 3200
+Text Notes 3700 2600 0    60   ~ 0
+RB3 = I2C CLK\nRB2 = I2C DATA
+$Comp
+L PWR_FLAG #FLG011
+U 1 1 5AB125A4
+P 6800 1000
+F 0 "#FLG011" H 6800 1075 50  0001 C CNN
+F 1 "PWR_FLAG" V 6800 1300 50  0000 C CNN
+F 2 "" H 6800 1000 50  0001 C CNN
+F 3 "" H 6800 1000 50  0001 C CNN
+	1    6800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG012
+U 1 1 5AB12792
+P 6950 1000
+F 0 "#FLG012" H 6950 1075 50  0001 C CNN
+F 1 "PWR_FLAG" V 6950 1300 50  0000 C CNN
+F 2 "" H 6950 1000 50  0001 C CNN
+F 3 "" H 6950 1000 50  0001 C CNN
+	1    6950 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG013
+U 1 1 5AB1280F
+P 7100 1000
+F 0 "#FLG013" H 7100 1075 50  0001 C CNN
+F 1 "PWR_FLAG" V 7100 1300 50  0000 C CNN
+F 2 "" H 7100 1000 50  0001 C CNN
+F 3 "" H 7100 1000 50  0001 C CNN
+	1    7100 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1400 6800 1000
+Connection ~ 6800 1400
+Wire Wire Line
+	6950 1500 6950 1000
+Connection ~ 6950 1500
+Wire Wire Line
+	7100 1600 7100 1000
+Connection ~ 7100 1600
+$EndSCHEMATC
