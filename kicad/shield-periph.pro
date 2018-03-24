@@ -1,4 +1,4 @@
-update=mer. 07 mars 2018 21:48:27 CET
+update=sam. 24 mars 2018 16:34:53 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -60,7 +62,4 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=pic24fj128ga202
-LibName34=./conn_shield_1
-LibName35=./conn_shield_2
-[general]
-version=1
+LibName34=/home/vahrum/Documents/Centrale/PA/shield-periph/kicad/conn_shield
