@@ -1,4 +1,4 @@
-update=sam. 24 mars 2018 16:34:53 CET
+update=mar. 10 avril 2018 10:38:50 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../kicad
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,5 +61,4 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=pic24fj128ga202
-LibName34=/home/vahrum/Documents/Centrale/PA/shield-periph/kicad/conn_shield
+LibName33=conn_shield
